@@ -1,3 +1,4 @@
+//Destructure the following object//
 console.log("hello!")
 const student = 
 {
