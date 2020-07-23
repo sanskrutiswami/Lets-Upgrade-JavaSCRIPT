@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DAY 1 QS.2</title>
+        <h1>Var,Let,Const</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <ul>
+
+            <li>
+                Var : 
+<p>The JavaScript variables statement is used to declare a variable and, optionally, we can initialize the value of that variable.
+</p>
+<p>Example: var a =100;
+</p>
+<p>Variable declarations are processed before the execution of the code.</p>
+<p>The scope of a JavaScript variable declared with var is its current execution context.</p>
+<p>The scope of a JavaScript variable declared outside the function is global.</p>
+<p>Consider the following code :</p>
+<p>function nodeSimplified(){</p>
+<p>  var a =100;</p>
+<p>  console.log(a);  // output 100</p>
+<p>if(true){</p>
+<p>       var a=25;</p>
+    <p>console.log(a); // output 25
+    }</p>
+ <p> console.log(a);  // output 25
+}</p>
+<p>In the above code, you can find, when the variable is updated inside the if loop,
+    that the value of variable "a" updated 25 globally, hence outside the if loop the value persists. 
+    But, be sure to use this functionality with great care because there is the possibility of overriding an existing value.
+   </p> </li>
+
+<li>let : 
+<p>The let statement declares a local variable in a block scope. It is similar to var, in that we can optionally initialize the variable.
+</p>
+<p>eg : let a =100;
+</p>
+<p>Consider the following code :</p>
+<p>function nodeSimplified(){</p>
+<p>let a =100;</p>
+<p>    console.log(a);  // output 100</p> 
+<p> if(true){</p>
+<p>       let a=25;</p>
+  <p> console.log(a); // output 25
+}</p>
+ <p> console.log(a);  // output 100
+}</p>
+
+
+<p>function nodeSimplified(){
+</p>  
+<p>let a =100;</p>
+<p>let a =25; //throws syntax error</p>  
+<p>console.log(a); 
+}</p>
+<p>Error Message: Uncaught SyntaxError: Identifier 'a' has already been declared.</p>
+<p>However, with var, it works fine.</p>
+<p>function nodeSimplified(){ </p>
+<p>  var a =100;   </p>
+<p>  var a =25;   </p>
+<p>console.log(a);  //output 25
+}</p>
+<p>The scope will be well maintained with a let statement and when using an inner function the let statement makes your code clean and clear.
+</p></li>
+
+<li>const : 
+<p>const statement values can be assigned once and they cannot be reassigned. The scope of const statement works similar to let statements.
+</p>
+<p>Example: const a =100;</p>
+
+<p>function nodeSimplified(){ </p>
+<p>const sans_variable =100;</p>
+<p>console.log(sans_var);  //output 100
+}</p> 
+            </li>
+        </ul>
+    
+    </body>
+</html>
