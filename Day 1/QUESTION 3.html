@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DAY 1 QS.3</title>
+        <h1>DATATYPES</h1>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <ul> The Datatypes in javascript are basically divided into two main types : </ul>
+    <li>PRIMITIVE DATATYPES : These datatype can store only single value one at at a time
+        <br> This datatype is stored in STACK(memory allocation).
+        <p>(1.) Number : Stores the integer/numeric value.
+            <br> eg. var num = 100 //here variable num stored a numeric value.
+            <br> console.log(num);// O/P = 100
+        </p>
+        <p>(2.) String : String consists of sequence of characters.
+            <br> eg. var name = "LETS UPGRADE" // the variable name has stored the characters.
+            <br> console.log(name); // O/P = 'LETS UPGRADE'
+         </p>
+        <p>(3.) Boolean value : this datatype stores the value as 'true'/'false'.
+            <br>eg. var val = 'true' // val stores the boolean value.
+            <br>console.log; // O/P = true
+        </p>
+        <p>(4.) Bigint : In Javasacript by using the number datatype one can print only values upto 2^(53-1).
+            <br>The BigInt is a primitive datatype format which allows you to enter numbers larger than 2^(53-1).
+            <br>Whenever you need to print a large value BigInt is used.
+            <br>Now this datatype is used by appending n to the integer literal or by calling the 
+            function BigInt().
+            <br>eg.  let value = 12345689n;
+            <br>     console.log(value); // O/P = 12345689n
+
+        </p>
+        <p>(5.) Null : In JavaScript null is "nothing".
+            It is supposed to be something that doesn't exist.
+          <br>  Unfortunately, in JavaScript, the data type of null is an object.
+          <br>  Its a bug in JS due to which the null is considered as an object.
+          <br>  It should be null.You can empty an object by setting it to null.
+          <br>  eg. let abc = {1,2,3};
+          <br>abc = null;//now the value is null yet the datatype is still an object.
+          <br>console.log(abc); // O/P = null
+
+        </p>
+          
+          <p>(6.) Undefined : When a variable in JS does not have a value it is
+                  known as undefined. The type will be also undefined.
+            <br>eg. var name ; // here the value remains undefined.
+          </p>
+    
+    </li>
+    <li>NON-PRIMITIVE(Reference datatypes) : These are also known as composite datatypes.
+        <br>These are stored in HEAP(memory allocation).
+        <p>(1.) Object datatype : Object is a collection of data.
+            <br>An object contains properties, defined as a key-value pair.
+                A property key (name) is always a string, but the value can be any data type, 
+                like strings, numbers, booleans, or complex data types like arrays,
+                function and other objects.
+                <br> eg. let course = { name:'JavaScript',batch: 1, duration: '7 days'}
+                <br>console.log(course); // O/P = { name:'JavaScript',batch: 1, duration: '7 days'}
+        </p> 
+        <p>(2.) Function datatype : Function is a callable object that executes a block of code.
+            <br> Functions can be stored in variables, objects, and arrays.
+            <br> Functions can be passed as arguments to other functions,
+                 and functions can be returned from functions.
+                 <br> eg. var greeting = function(){ 
+                 <br> return "Hello World!"}
+                 <br> alert(typeof greeting) // O/P =  function
+                 <br> alert(greeting());     // O/P =  Hello World!
+                I
+        </p>
+        <p>(3.) Array datatype : The array object stores multiple values in a single variable.
+            <br> The values stored inside an array are called as "elements".
+            <br> Each element acquires a numeric position known as "index".
+            <br> The index in array starts from 0, that means the first element will be
+            <br> indexed as [0] ,second as [1] and so on.
+            <br> eg. let array = [2,4,6,8,10,12,14];
+            <br> console.log(array); // O/P = (7) [2,4,6,8,10,12,14]
+            <br> console.log(array[3]); // O/P = 8
+             </p>
+        
+            </li>
+</body>
+</html>
