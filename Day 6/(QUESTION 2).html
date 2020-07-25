@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DAY 6 QS.2</title>
+        <h2>Write a program that will display the multiplication table of a number on the webpage in a proper
+            format. Take the input from the user.</h2>
+        <h3>Following is the multiplication table of the entered number : </h3>
+        <div id = "multiplication_table"></div>
+        <script >
+         let userinput = prompt("Enter a number to dislapy its multiplication table : ");
+
+function multable()
+{
+var display = " ";
+for (i=1;i<=20;i++)
+  {
+     var multiplier = userinput;
+     var result = i*userinput;
+
+     display += multiplier  +  "    x    "  +  i  +  "    =    "  +  result  +  "<br>";
+
+  }
+document.getElementById("multiplication_table").innerHTML=display;
+}
+
+        </script>
+    </head>
+    <body onload = "multable()">
+       
+    </body>
+</html>
