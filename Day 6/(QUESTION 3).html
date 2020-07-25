@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DAY 6 QS.3</title>
+        <h1>Hello!</h1> 
+        <h2 id="name"></h2>
+        <h3 id="time"></h3>
+
+        <style>
+            body
+             {
+            padding: 30px;
+            background-color:whitesmoke;
+            color:rosybrown;
+            font-size: 35px;
+            }
+            .dark-mode
+            {
+                background-color:black;
+                color:peachpuff;
+            }      
+        </style>
+
+          <script>
+            let name=prompt("Enter your name to proceed : ")
+var msg="Welcome " + name ;
+document.getElementById("name").innerHTML=msg;
+function DarkMode(){
+    var doc= document.body;
+    doc.classList.toggle("dark-mode");
+}
+
+const currenttime=document.getElementById('time');
+
+
+function clock(){
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    currenttime.innerText = time;
+}
+
+setInterval(clock,1000);
+
+        </script>    
+
+       
+    </head>
+    <body>
+        <button type ="button" onclick="DarkMode()">ENABLE Dark Mode</button>
+    </body>
+</html>
