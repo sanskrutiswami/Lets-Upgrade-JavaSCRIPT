@@ -1,0 +1,45 @@
+body {background-color: rgb(179, 153, 204);}
+
+.content{
+    max-width: 600px;
+    padding:20px;
+    margin:auto;
+    justify-content: center;
+    align-items: center;}
+h2 {
+    background-color:powderblue;
+    color:black;
+    padding:10px;
+    font-family: Georgia,;
+    text-align: center;
+    border-radius:5px;
+    box-shadow: 4px 4px peachpuff;
+
+}
+
+.btn{
+    height:50px;
+    width:150px;
+    font-size: 18px;
+    color:black;
+    background-color:rgb(166, 177, 231);
+    padding:5px;
+    border-radius: 5px;}
+
+.card{
+    padding:15px 30px 15px 30px;
+    max-width:500px;
+    max-height:300px;
+    text-align: center;
+    background-color: #f2e6ff;
+    border-radius: 5px;
+    border-top: #ee9be4 5px;
+    margin-top: 20px;
+    } 
+button:focus {outline: none;}
+
+p{
+  font-family:'Lucida Sans';
+  font-size: 20px;}
+
+img{height:25px;width:25px;}
